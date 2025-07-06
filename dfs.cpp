@@ -52,11 +52,12 @@ public:
         visited[startnode] = true;
         cout << startnode << " ";
 
-        for (auto it = adjList[startnode].begin(); it != adjList[startnode].end(); ++it)
+        for (auto &it : adjList[startnode])
         {
-            if (!visited[it->first])
+            int neighbor = it.first;
+            if (!visited[neighbor])
             {
-                dfsUtil(it->first, visited);
+                dfsUtil(neighbor, visited);
             }
         }
     }
