@@ -1,5 +1,8 @@
 {
   "files.associations": {
+    "*.dbclient-js": "javascript",
+    "*.ejs": "html",
+    "*.html": "html",
     "iostream": "cpp",
     "ostream": "cpp",
     "unordered_map": "cpp",
@@ -64,7 +67,8 @@
     "xlocnum": "cpp",
     "xloctime": "cpp",
     "xmemory": "cpp",
-    "xtr1common": "cpp"
+    "xtr1common": "cpp",
+    "functional": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
