@@ -1,52 +1,32 @@
+
 #include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
+
+int maxSumFixedWindow(vector<int> arr, int k)
+{
+    int n = arr.size();
+    int maxsum = INT_MIN;
+    int currentSum = 0;
+
+    for (int i = 0; i < k; i++)
+    {
+        currentSum += arr[i]; // Calculate the sum of the first 'k' elements
+    }
+    maxsum = currentSum; // Initialize maxsum with the first window sum
+
+    for (int i = k; i < n; i++)
+    {
+        currentSum += arr[i] - arr[i - k]; // Slide the window by adding the next element and removing the first element of the previous windowmax
+        maxsum = max(maxsum, currentSum);  // Update maxsum if the current window sum is greater
+    }
+    return maxsum; // Return the maximum sum found
+}
 
 int main()
 {
-
-    int arr[50] = {
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        1,
-        2,
-        3,
-        5,
-        4,
-    };
-    int targetsum;
-
-    cout << "enter the target sum: ";
-    cin >> targetsum;
-
-    int i = 0;
-    int j = 0;
-    int sum = 0;
-    int size = sizeof(arr) / sizeof(arr[0]);
-
-    while (j < size)
-    {
-
-        sum = sum + arr[j];
-        j++;
-
-        while (sum > targetsum && i < j)
-        {
-
-            sum = sum - arr[i];
-            i++;
-        }
-        if (sum == targetsum)
-        {
-            cout << "the range of max sum is from indexes"
-                 << " " << i << " " << j - 1 << endl;
-        }
-    }
-
+    vector<int> arr = {2, 1, 5, 1, 3, 2};
+    int k = 3;
+    cout << "Maximum sum of subarray of size " << k << " is: " << maxSumFixedWindow(arr, k) << endl;
     return 0;
 }
