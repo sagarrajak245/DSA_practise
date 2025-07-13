@@ -10,11 +10,13 @@ public:
         queue<pair<int, int>> q;
         q.push({src, -1});
         visited[src] = 1;
+
         while (!q.empty())
         {
             int node = q.front().first;
             int par = q.front().second;
             q.pop();
+
             for (auto it : adj[node])
             {
                 if (!visited[it])
@@ -29,35 +31,43 @@ public:
                 }
             }
         }
-        return false; // no cycle detected
+        return false;
     }
-}
+};
 
-int
-main()
+int main()
 {
-    int n, m;
-    cout << "Enter number of nodes and edges: ";
-    cin >> n >> m;
+    // Predefined number of nodes
+    int n = 5;
 
+    // Predefined adjacency list
     vector<vector<int>> adj(n);
-    cout << "Enter edges (u v):" << endl;
-    for (int i = 0; i < m; i++)
+    adj[0] = {1, 2};
+    adj[1] = {0, 2};
+    adj[2] = {0, 1};
+    adj[3] = {4};
+    adj[4] = {3};
+
+    // Print the graph
+    cout << "Graph adjacency list:" << endl;
+    for (int i = 0; i < n; i++)
     {
-        int u, v;
-        cin >> u >> v;
-        adj[u].push_back(v);
-        adj[v].push_back(u); // undirected graph
+        cout << i << ": ";
+        for (auto v : adj[i])
+            cout << v << " ";
+        cout << endl;
     }
 
+    // Cycle detection
     vector<int> visited(n, 0);
     vector<int> parent(n, -1);
 
+    Solution obj;
     for (int i = 0; i < n; i++)
     {
         if (!visited[i])
         {
-            if (bfs_cycle(i, visited, parent, adj))
+            if (obj.bfs_cycle(i, visited, parent, adj))
             {
                 cout << "Cycle detected in the graph." << endl;
                 return 0;

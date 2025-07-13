@@ -1,0 +1,197 @@
+# 📘 Arrays & Vectors Mastery Plan (C++ DSA)
+
+> 🚀 **Goal:** Go from intermediate to advanced at solving array/vector problems in interviews and contests.
+> 💻 **Language:** C++
+> 📆 **Suggested timeline:** \~4 weeks (flexible, you can go faster/slower)
+> 🗂️ **Includes:** Concepts, patterns, curated LeetCode problems.
+
+---
+
+## 📌 Week 1: Foundations + STL Mastery
+
+### ✅ Concepts
+
+* Static arrays vs vectors
+* Vector functions: `push_back`, `pop_back`, `insert`, `erase`, `size`, `capacity`, `clear`
+* 2D vectors
+* STL algorithms: `sort`, `reverse`, `min_element`, `max_element`, `accumulate`
+
+### ✅ Practice
+
+* [ ] Create a vector and input/output
+* [ ] Reverse a vector in-place
+* [ ] Find min and max in vector
+* [ ] Sum of elements using `accumulate`
+* [ ] 2D vector input/output
+
+### ✅ LeetCode Easy
+
+* [Reverse String](https://leetcode.com/problems/reverse-string/)
+* [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+* [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
+* [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+
+---
+
+## 📌 Week 2: Two Pointer & Sliding Window
+
+### ✅ Concepts
+
+* Fixed-size sliding window
+* Variable-size sliding window
+* Two-pointer technique
+* Subarrays with sum/Kadane’s
+
+### ✅ Practice
+
+* [ ] Max sum subarray of size k
+* [ ] Smallest subarray with sum ≥ target
+* [ ] 2 sum (sorted)
+* [ ] 3 sum
+
+### ✅ LeetCode Medium
+
+* [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+* [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+* [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+* [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+* [3Sum](https://leetcode.com/problems/3sum/)
+* [4Sum](https://leetcode.com/problems/4sum/)
+
+---
+
+## 📌 Week 3: Prefix Sum, Sorting, Greedy
+
+### ✅ Concepts
+
+* Prefix sum array
+* Range sum queries
+* Sorting with custom comparator
+* Greedy partitioning
+* Dutch National Flag algorithm
+
+### ✅ Practice
+
+* [ ] Prefix sums
+* [ ] Range sum queries
+* [ ] Counting inversions
+* [ ] Sort array of 0s,1s,2s
+* [ ] Custom sort by frequency
+
+### ✅ LeetCode Medium
+
+* [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+* [Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)
+* [Sort Colors](https://leetcode.com/problems/sort-colors/)
+* [Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)
+* [Partition Labels](https://leetcode.com/problems/partition-labels/)
+
+---
+
+## 📌 Week 4: Advanced Tricks
+
+### ✅ Concepts
+
+* Difference arrays (range updates)
+* Binary search on answer
+* `lower_bound`, `upper_bound`
+* Two-pointer advanced
+* STL `set`/`multiset` for order stats
+* Frequency maps
+* Segment Tree / BIT (Fenwick Tree)
+
+### ✅ Practice
+
+* [ ] Lower\_bound / upper\_bound practice
+* [ ] Range update with difference array
+* [ ] Count subarrays with sum exactly K
+* [ ] K-th smallest element
+* [ ] Frequency of elements
+
+### ✅ LeetCode Hard / Advanced
+
+* [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
+* [Find First and Last Position of Element](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+* [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
+* [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+* [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)
+
+---
+
+## 📌 Extra: 2D Matrix & Grids
+
+### ✅ Learn:
+
+* Grid representation: `vector<vector<int>>`
+* BFS/DFS on grid
+* Number of Islands
+* Flood Fill
+
+### ✅ LeetCode
+
+* [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+* [Flood Fill](https://leetcode.com/problems/flood-fill/)
+* [Word Search](https://leetcode.com/problems/word-search/)
+
+---
+
+## ✅ 🌟 Practice Questions List (General)
+
+**Easy**
+
+* Reverse array
+* Remove duplicates
+* Rotate array
+* Move zeroes to end
+
+**Medium**
+
+* Maximum subarray sum
+* Subarray sum equals K
+* Two Sum, 3Sum
+* Sort Colors
+
+**Hard**
+
+* Minimum swaps to sort
+* Count inversions
+* Maximum product subarray
+* Longest subarray with sum ≤ K
+
+---
+
+## ✅ Suggested Daily Schedule
+
+| Day | Topics / Problems                                 | Time   |
+| --- | ------------------------------------------------- | ------ |
+| 1   | Vector basics, STL methods, 2 easy LeetCode       | 1 hr   |
+| 2   | 2D vector, sorting, 2 problems                    | 1 hr   |
+| 3   | Sliding window concept, 2 problems                | 1 hr   |
+| 4   | Kadane’s + Prefix sums, 2 problems                | 1 hr   |
+| 5   | Two-pointer problems                              | 1 hr   |
+| 6   | Sorting & greedy problems                         | 1.5 hr |
+| 7   | Binary search patterns                            | 1 hr   |
+| 8   | Frequency maps, sets                              | 1 hr   |
+| 9   | Advanced tricks (difference array, range updates) | 1.5 hr |
+| 10+ | Mixed practice + contest problems                 | 1.5 hr |
+
+---
+
+## ✅ Resources
+
+* LeetCode Explore → Arrays 101
+* GeeksForGeeks Array Tag
+* NeetCode 150 - Array Section
+* Coding Ninja / Striver SDE Sheet → Array section
+
+---
+
+## 🏱 Bonus
+
+If you want this converted to:
+
+* PDF
+* Word document
+* Notion checklist
+
+Just ask!
