@@ -30,6 +30,12 @@ public:
             int count = it.second;
             string rev = word;
             reverse(rev.begin(), rev.end());
+            if (word == rev)
+            {
+                int pairs = count / 2;
+                total_length += pairs * 4;
+                freq[word] -= pairs * 2; // each pair contributes 4 characters
+            }
         }
     }
 };

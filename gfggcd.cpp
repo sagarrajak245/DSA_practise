@@ -20,10 +20,27 @@ int gcd(int a, int b)
     return gcd(a, b - a);
 }
 
+// iterative way for gcd
+
+int gcd_iterative(int a, int b)
+{
+
+    int temp = 0;
+    while (b != 0)
+    {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
 // Driver program to test above function
 int main()
 {
     int a = 8, b = 24;
     cout << "GCD of " << a << " and " << b << " is " << gcd(a, b);
+    cout << "\nGCD of " << a << " and " << b << " is " << gcd_iterative(a, b);
+
     return 0;
 }

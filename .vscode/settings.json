@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "*.ejs": "html",
+        "*.html": "html",
+        "merge two sorted array": "cpp"
+    }
+}

@@ -1,7 +1,7 @@
 #include<iostream>
 #include<algorithm>
 using namespace std;
-// it is unstable algorithm
+// it is stable algorithm
 // it is inplace algorithm
 
 void insertion_short(int arr[],int size){
